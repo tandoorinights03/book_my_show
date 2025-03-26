@@ -1,0 +1,29 @@
+{
+  "name": "movie-hub",
+  "version": "1.0.0",
+  "description": "A web application for movie information, booking, and management",
+  "scripts": {
+    "start": "cd server && npm start",
+    "dev": "cd server && npm run dev",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": [
+    "movie",
+    "booking",
+    "cinema",
+    "entertainment"
+  ],
+  "author": "",
+  "license": "ISC",
+  "main": "index.js",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.12.2"
+  }
+}
