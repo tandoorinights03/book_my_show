@@ -159,7 +159,7 @@ The frontend runs on `http://localhost:3000`, and the backend runs on `http://lo
 
 ## Contributors
 
-- Your Name (@your-github)
+- Your Name (@tandoorinights03)
 
 For any issues, feel free to raise a ticket in the repository. 🚀
 
