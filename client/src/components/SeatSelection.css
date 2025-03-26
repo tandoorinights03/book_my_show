@@ -1,0 +1,75 @@
+.seat-selection-container {
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  gap: 10px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #4caf50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.seat.unavailable {
+  background-color: #8b0000; /* Dark Red */
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: #ffc107;
+  color: black;
+}
+
+.confirm-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.confirm-btn:hover {
+  background-color: #0056b3;
+}
+
+.confirm-btn:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.screen {
+  width: 80%;
+  height: 50px;
+  background: linear-gradient(to bottom, #ccc, #888);
+  border-radius: 50% / 100% 100% 0 0;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+  color: black;
+}

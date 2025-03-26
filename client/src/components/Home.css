@@ -1,0 +1,120 @@
+/* Home Container */
+.home-container {
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+/* Glowing Welcome Title */
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  background: linear-gradient(to right, #ffcc00, #ff4c4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1s ease-in-out, glow 2s infinite alternate;
+  margin-bottom: 30px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.8), 0 0 20px rgba(255, 76, 76, 0.8);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 204, 0, 1), 0 0 40px rgba(255, 76, 76, 1);
+  }
+}
+
+/* Options Container */
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Option Cards */
+.option-card {
+  width: 200px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: linear-gradient(135deg, #ff6b6b, #ff4c4c);
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.option-card span {
+  margin-top: 8px;
+}
+
+.option-card:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Active & Disabled Cards */
+.active-card {
+  background: linear-gradient(135deg, #ff5733, #ff2a00);
+  color: white;
+}
+
+.disabled-card {
+  background-color: #ddd;
+  color: gray;
+  cursor: not-allowed;
+}
+
+/* Buttons Styling */
+button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* Active Button */
+.active-button {
+  background: linear-gradient(45deg, #ff5733, #ff8c00);
+  color: white;
+  box-shadow: 0px 4px 10px rgba(255, 87, 51, 0.4);
+}
+
+.active-button:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 6px 15px rgba(255, 87, 51, 0.6);
+  background: linear-gradient(45deg, #ff8c00, #ff5733);
+}
+
+/* Disabled Button */
+.disabled-button {
+  background: #777;
+  color: #ddd;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Disabled Button Shake Effect */
+.disabled-button:hover {
+  animation: shake 0.4s ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+}
